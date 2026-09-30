@@ -1,4 +1,8 @@
-# Rotas de Diligências — versão 3.1 final para GitHub
+# Rotas de Diligências — v3.6
+
+Nesta versão, quando houver endereços importados sem latitude/longitude, aparece um aviso azul visível na própria tela da rota com o botão **Localizar**. Isso transforma os endereços em coordenadas para que os marcadores apareçam no mapa.
+
+# Rotas de Diligências — versão 3.6 final para GitHub
 
 PWA local-first para organização de diligências em mapa, com armazenamento criptografado no aparelho.
 
@@ -73,3 +77,17 @@ O GitHub hospeda o código, não os mandados cadastrados no navegador. Dados tex
 ## Backup
 
 Como os dados ficam no próprio dispositivo, use **Exportar backup** periodicamente. O backup é criptografado.
+
+
+## Correção v3.6
+- Botão de criação de proteção usa `addEventListener` em vez de depender de `onclick`.
+- CSP compatível com os controles existentes.
+- Service worker usa rede primeiro para arquivos do app, reduzindo risco de cache antigo.
+- A tela inicial mostra `versão 3.6` para confirmação visual.
+
+
+## Atualização v3.6
+- Arquivos JS/CSS/SW receberam nomes novos para evitar cache de versões antigas.
+- O botão **⌖ Localizar** aparece no cabeçalho e sobre o mapa quando houver endereços sem coordenadas.
+- O mapa tenta OpenStreetMap e, se os blocos falharem, usa um provedor alternativo com atribuição.
+- Para forçar a primeira abertura desta versão, acesse `v36.html` uma vez.

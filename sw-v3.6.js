@@ -1,5 +1,5 @@
-const CACHE='rotas-v3.5';
-const CORE=['./','./index.html','./styles.css?v=3.5','./app.js?v=3.5','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
+const CACHE='rotas-v3.6';
+const CORE=['./','./index.html','./v36.html','./styles-v3.6.css?v=3.6','./app-v3.6.js?v=3.6','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
 const LIBS=['https://unpkg.com/leaflet@1.9.4/dist/leaflet.css','https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{
   const c=await caches.open(CACHE);
