@@ -1,4 +1,4 @@
-const CACHE='rotas-secure-v3.1';
+const CACHE='rotas-v3.2';
 const CORE=['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
 const LIBS=['https://unpkg.com/leaflet@1.9.4/dist/leaflet.css','https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{
